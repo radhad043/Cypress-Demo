@@ -108,11 +108,6 @@ export const losscalculationvariables = {
     }
   } 
 
-  export const documentUpload ={
-
-   
-}
-
 export const jmrVariables = {
      add: '.ant-form > .ant-space > :nth-child(1) > .ant-btn > .ng-star-inserted' ,
      plantName :':nth-child(1) > .ant-row > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input',
@@ -156,4 +151,14 @@ export const jmrVariables = {
   }
  
   
+  export const solarLossVariables = {
+  SelectPlant : 'form.ng-pristine > .ant-select > .ant-select-selector > .ant-select-selection-item' ,
+  CreateLoss : '.ant-btn > .ng-star-inserted' , 
+  TempartureLimit : '.ant-form-item-control-input',
+  NearShaddingirrandiancelossValue : ':nth-child(1) > :nth-child(2) > .ant-input',
+  NearShaddingirrandiancelossLosstype :':nth-child(2) > :nth-child(3) > .ant-select > .ant-select-selector',
+  NearShaddingirrandiancelossControlability : '',
+  NearShaddingirrandianceFacing : '' ,
+  
+  }
 

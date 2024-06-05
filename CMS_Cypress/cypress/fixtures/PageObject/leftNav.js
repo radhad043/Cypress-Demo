@@ -61,5 +61,19 @@ export class LeftNav{
     // click on Dashboard button
     cy.get('.ant-menu-submenu-open > .ant-menu > app-menu-item.ng-star-inserted > :nth-child(2) > a').click();
  }
+ 
 
+ solarLossFormConfiguration(){
+    // Click on Configuration
+   // cy.get(':nth-child(3) > app-menu-drawer-child > [_ngcontent-adf-c563=""][nz-submenu=""] > [style="padding-left: 24px;"] > [title=""] > span').click();
+    cy.contains('Configuration').click();
+    
+// Click on Expected Solar loss button
+cy.contains('Expected Solar Loss').click();
+
+//click on create 
+cy.get('.ant-menu-submenu-active > .ant-menu > app-menu-item.ng-star-inserted > :nth-child(1) > a').click({force: true});
+cy.wait(1000);
+cy.get('.ant-drawer-close').click();
+ }
 }

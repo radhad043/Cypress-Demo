@@ -36,18 +36,18 @@ describe('JMR Creation Functionality Test', () => {
         cy.get(jmrVariables.ExportkwH).type(enterRandomNumber.length);
         cy.get(jmrVariables.ImportkwH).type(enterRandomNumber.length);
         //cy.get(jmrVariables.DocumentUpload).type('iec');
-        const csvContent = `date,plantidentifier,planttype,capacity,T_CUF,M_CUF,T_POA,M_POA,T_Egrid,
-        M_Egrid,T_PR,M_PR,T_PA,M_PA,T_GA,M_GA,T_TA,M_TA,T_WS,M_WS,T_IGA,M_IGA`;
+        // const csvContent = `date,plantidentifier,planttype,capacity,T_CUF,M_CUF,T_POA,M_POA,T_Egrid,
+        // M_Egrid,T_PR,M_PR,T_PA,M_PA,T_GA,M_GA,T_TA,M_TA,T_WS,M_WS,T_IGA,M_IGA`;
         
-            // Convert CSV content to buffer
-            const csvBuffer = Cypress.Buffer.from(csvContent);
+        //     // Convert CSV content to buffer
+        //     const csvBuffer = Cypress.Buffer.from(csvContent);
         
-            // Upload the CSV file
-            cy.get('input[type=file]').selectFile({
-              contents: csvBuffer,
-              fileName: 'users.csv',
-              mimeType: 'text/csv',
-      })
+        //     // Upload the CSV file
+        //     cy.get('input[type=file]').selectFile({
+        //       contents: csvBuffer,
+        //       fileName: 'users.csv',
+        //       mimeType: 'text/csv',
+      // })
 
     
   })
