@@ -1,0 +1,5 @@
+date,plantidentifier,planttype,capacity,T_CUF,M_CUF,T_POA,M_POA,T_Egrid,M_Egrid,T_PR,M_PR,T_PA,M_PA,T_GA,M_GA,T_TA,M_TA,T_WS,M_WS,T_IGA,M_IGA
+04-06-2024,SL10MWT,SOLAR,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,
+04-06-2024,ESSP20MW,SOLAR,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,
+04-06-2024,Panama10MW,SOLAR,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,
+04-06-2024,ESEP10MW,SOLAR,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,
