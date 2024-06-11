@@ -35,8 +35,7 @@ describe('Solar Loss Form Functionality Test', () => {
     cy.get(solarLossVariables.CreateLoss).click();
     cy.get(solarLossVariables.TempartureLimit).type(enterRandomNumber.length);
     cy.get(solarLossVariables.NearShaddingirrandiancelossValue).type(enterRandomNumber.length);
-    // cy.get(':nth-child(1) > :nth-child(3) > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input').contains('FIXED LOSS').click();
-    // cy.get(':nth-child(1) > :nth-child(3) > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input').contains('DYNAMIC LOSS').click();
+    
 
     cy.get(solarLossVariables.NearShaddingirrandiancelossLosstype).click();
     cy.get('.ant-select-item-option-content').then($options => {
@@ -44,7 +43,7 @@ describe('Solar Loss Form Functionality Test', () => {
         $options.each((index, $option) => {
           const optionText = $option.innerText;
   
-          // Example condition: select option if it matches 'FIXED LOSS' or 'DYNAMIC LOSS'
+          //  condition: select option if it matches 'FIXED LOSS' or 'DYNAMIC LOSS'
           if (optionText === 'FIXED LOSS') {
             cy.wrap($option).click();
           } else if (optionText === 'DYNAMIC LOSS') {

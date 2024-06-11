@@ -66,7 +66,7 @@ export class LeftNav{
  solarLossFormConfiguration(){
     // Click on Configuration
    // cy.get(':nth-child(3) > app-menu-drawer-child > [_ngcontent-adf-c563=""][nz-submenu=""] > [style="padding-left: 24px;"] > [title=""] > span').click();
-    cy.contains('Configuration').click();
+   cy.contains('Configuration').click();
     
 // Click on Expected Solar loss button
 cy.contains('Expected Solar Loss').click();
